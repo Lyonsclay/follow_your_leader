@@ -63,6 +63,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
+    colorize (0.7.7)
     columnize (0.9.0)
     database_cleaner (1.4.1)
     debug_inspector (0.0.2)
@@ -108,6 +109,14 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.2)
     kgio (2.9.3)
+    konacha (3.5.0)
+      actionpack (>= 3.1, < 5)
+      capybara
+      colorize
+      railties (>= 3.1, < 5)
+      sprockets (>= 2, < 4)
+      tilt
+    konacha-chai-matchers (1.0.0)
     launchy (2.4.3)
       addressable (~> 2.3)
     listen (2.10.0)
@@ -274,6 +283,8 @@ DEPENDENCIES
   guard-rspec
   jbuilder (~> 2.0)
   jquery-rails
+  konacha
+  konacha-chai-matchers
   launchy
   pg
   poltergeist

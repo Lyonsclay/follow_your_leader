@@ -19,6 +19,7 @@ coverage
 .secret
 leaders.org
 
-
 # Ignore application configuration
 /config/application.yml
+
+node_modules/*

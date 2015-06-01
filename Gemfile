@@ -51,6 +51,10 @@ group :development, :test do
   gem 'factory_girl_rails', '~> 4.0'
 
   gem 'rspec-rails'
+
+  gem 'konacha'
+
+  gem 'konacha-chai-matchers'
 end
 
 group :production do
