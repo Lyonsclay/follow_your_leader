@@ -1,0 +1,11 @@
+<h1>Follow Your Leader</h1>
+
+<h2>Find your political representatives.</h2>
+
+<%= form_for VoterDistrict.new, url: leaders_path do |f| %>
+    <%= f.label "Enter address" %>
+    <%= f.text_field :address %>
+    <%= f.hidden_field :longitude %>
+    <%= f.hidden_field :latitude %>
+    <%= f.submit "Get reps" %>
+<% end %>

@@ -53,4 +53,10 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  root 'leaders#new'
+
+  post 'leaders' => 'leaders#create'
+
+  get 'leaders' => 'leaders#index'
 end
