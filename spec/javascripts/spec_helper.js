@@ -14,7 +14,3 @@ mocha.timeout(1200);
 // Show stack trace on failing assertion.
 chai.config.includeStack = true;
 
-//var chai = require("chai");
-//var chaiAsPromised = require("chai-as-promised");
-
-//chai.use(chaiAsPromised);

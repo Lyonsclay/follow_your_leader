@@ -5,10 +5,11 @@ class LeadersController < ApplicationController
   end
 
   def create
+    address = params[:voter_district][:address]
+    @leaders = Leader.all
     render action: "index"
   end
 
   def index
-    @leaders = ObjectSpace.each_object(Leader).to_a
   end
 end

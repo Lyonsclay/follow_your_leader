@@ -9,17 +9,27 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
+
 !/log/.keep
+
 /tmp
 
 # Ignore simplecov generated files
-coverage
+/coverage
 
-.DS_Store
-.secret
-leaders.org
+/.DS_Store
+
+/.secret
+
+/leaders.org
 
 # Ignore application configuration
 /config/application.yml
 
-node_modules/*
+/node_modules/*
+
+/curl.txt
+
+/get_reps.json
+
+/config/secrets.yml
