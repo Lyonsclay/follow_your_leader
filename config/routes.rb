@@ -59,4 +59,6 @@ Rails.application.routes.draw do
   post 'leaders' => 'leaders#create'
 
   get 'leaders' => 'leaders#index'
+
+  get 'forum' => 'muut#index'
 end
