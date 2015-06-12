@@ -1,3 +1,5 @@
+require 'net/http'
+
 class RepsGetter
   attr_accessor :address, :hash, :leaders
   def initialize(address)
