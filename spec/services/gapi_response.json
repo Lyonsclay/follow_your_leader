@@ -1,0 +1,867 @@
+{
+ "kind": "civicinfo#representativeInfoResponse",
+ "normalizedInput": {
+  "line1": "1814 bonnycastle ave",
+  "city": "louisville",
+  "state": "KY",
+  "zip": "40205"
+ },
+ "divisions": {
+  "ocd-division/country:us/state:ky/cd:3": {
+   "name": "Kentucky's 3rd congressional district",
+   "officeIndices": [
+    0
+   ]
+  },
+  "ocd-division/country:us/state:ky/county:jefferson": {
+   "name": "Jefferson County",
+   "officeIndices": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ]
+  },
+  "ocd-division/country:us/state:ky/sldu:19": {
+   "name": "Kentucky State Senate district 19",
+   "officeIndices": [
+    5
+   ]
+  },
+  "ocd-division/country:us/state:ky/sldl:34": {
+   "name": "Kentucky State House district 34",
+   "officeIndices": [
+    4
+   ]
+  },
+  "ocd-division/country:us": {
+   "name": "United States",
+   "officeIndices": [
+    1,
+    2
+   ]
+  },
+  "ocd-division/country:us/state:ky": {
+   "name": "Kentucky",
+   "officeIndices": [
+    3,
+    6,
+    7,
+    15,
+    16,
+    17,
+    18,
+    19
+   ]
+  },
+  "ocd-division/country:us/state:ky/place:louisville": {
+   "name": "Louisville KY -- there are some unincorporated towns in Jefferson county that are often not included in Louisville population totals. Users are advised that the county:jefferson identifier is better for any government stats"
+  }
+ },
+ "offices": [
+  {
+   "name": "United States House of Representatives KY-03",
+   "divisionId": "ocd-division/country:us/state:ky/cd:3",
+   "levels": [
+    "country"
+   ],
+   "roles": [
+    "legislatorLowerBody"
+   ],
+   "officialIndices": [
+    0
+   ]
+  },
+  {
+   "name": "President of the United States",
+   "divisionId": "ocd-division/country:us",
+   "levels": [
+    "country"
+   ],
+   "roles": [
+    "headOfState",
+    "headOfGovernment"
+   ],
+   "officialIndices": [
+    1
+   ]
+  },
+  {
+   "name": "Vice-President of the United States",
+   "divisionId": "ocd-division/country:us",
+   "levels": [
+    "country"
+   ],
+   "roles": [
+    "deputyHeadOfGovernment"
+   ],
+   "officialIndices": [
+    2
+   ]
+  },
+  {
+   "name": "United States Senate",
+   "divisionId": "ocd-division/country:us/state:ky",
+   "levels": [
+    "country"
+   ],
+   "roles": [
+    "legislatorUpperBody"
+   ],
+   "officialIndices": [
+    3,
+    4
+   ]
+  },
+  {
+   "name": "KY State House District 34",
+   "divisionId": "ocd-division/country:us/state:ky/sldl:34",
+   "levels": [
+    "administrativeArea1"
+   ],
+   "roles": [
+    "legislatorLowerBody"
+   ],
+   "officialIndices": [
+    5
+   ]
+  },
+  {
+   "name": "KY State Senate District 19",
+   "divisionId": "ocd-division/country:us/state:ky/sldu:19",
+   "levels": [
+    "administrativeArea1"
+   ],
+   "roles": [
+    "legislatorUpperBody"
+   ],
+   "officialIndices": [
+    6
+   ]
+  },
+  {
+   "name": "Governor",
+   "divisionId": "ocd-division/country:us/state:ky",
+   "levels": [
+    "administrativeArea1"
+   ],
+   "roles": [
+    "headOfGovernment"
+   ],
+   "officialIndices": [
+    7
+   ]
+  },
+  {
+   "name": "Lieutenant Governor",
+   "divisionId": "ocd-division/country:us/state:ky",
+   "levels": [
+    "administrativeArea1"
+   ],
+   "roles": [
+    "deputyHeadOfGovernment"
+   ],
+   "officialIndices": [
+    8
+   ]
+  },
+  {
+   "name": "PVA",
+   "divisionId": "ocd-division/country:us/state:ky/county:jefferson",
+   "officialIndices": [
+    9
+   ]
+  },
+  {
+   "name": "Clerk",
+   "divisionId": "ocd-division/country:us/state:ky/county:jefferson",
+   "officialIndices": [
+    10
+   ]
+  },
+  {
+   "name": "Mayor",
+   "divisionId": "ocd-division/country:us/state:ky/county:jefferson",
+   "officialIndices": [
+    11
+   ]
+  },
+  {
+   "name": "Coroner",
+   "divisionId": "ocd-division/country:us/state:ky/county:jefferson",
+   "officialIndices": [
+    12
+   ]
+  },
+  {
+   "name": "Sheriff",
+   "divisionId": "ocd-division/country:us/state:ky/county:jefferson",
+   "officialIndices": [
+    13
+   ]
+  },
+  {
+   "name": "Attorney",
+   "divisionId": "ocd-division/country:us/state:ky/county:jefferson",
+   "officialIndices": [
+    14
+   ]
+  },
+  {
+   "name": "Judge Executive",
+   "divisionId": "ocd-division/country:us/state:ky/county:jefferson",
+   "officialIndices": [
+    15
+   ]
+  },
+  {
+   "name": "Treasurer",
+   "divisionId": "ocd-division/country:us/state:ky",
+   "officialIndices": [
+    16
+   ]
+  },
+  {
+   "name": "State Auditor",
+   "divisionId": "ocd-division/country:us/state:ky",
+   "officialIndices": [
+    17
+   ]
+  },
+  {
+   "name": "Attorney General",
+   "divisionId": "ocd-division/country:us/state:ky",
+   "officialIndices": [
+    18
+   ]
+  },
+  {
+   "name": "Secretary of State",
+   "divisionId": "ocd-division/country:us/state:ky",
+   "officialIndices": [
+    19
+   ]
+  },
+  {
+   "name": "Agriculture Commissioner",
+   "divisionId": "ocd-division/country:us/state:ky",
+   "officialIndices": [
+    20
+   ]
+  }
+ ],
+ "officials": [
+  {
+   "name": "John A. Yarmuth",
+   "address": [
+    {
+     "line1": "403 Cannon House Office Building",
+     "city": "washington",
+     "state": "DC",
+     "zip": "20515"
+    }
+   ],
+   "party": "Democratic",
+   "phones": [
+    "(202) 225-5401"
+   ],
+   "urls": [
+    "http://yarmuth.house.gov/"
+   ],
+   "photoUrl": "http://bioguide.congress.gov/bioguide/photo/Y/Y000062.jpg",
+   "channels": [
+    {
+     "type": "Facebook",
+     "id": "214258646163"
+    },
+    {
+     "type": "Twitter",
+     "id": "RepJohnYarmuth"
+    },
+    {
+     "type": "YouTube",
+     "id": "RepJohnYarmuth"
+    }
+   ]
+  },
+  {
+   "name": "Barack Obama",
+   "address": [
+    {
+     "line1": "The White House",
+     "line2": "1600 pennsylvania avenue nw",
+     "city": "washington",
+     "state": "DC",
+     "zip": "20500"
+    }
+   ],
+   "party": "Democratic",
+   "phones": [
+    "(202) 456-1111"
+   ],
+   "urls": [
+    "http://www.whitehouse.gov/"
+   ],
+   "photoUrl": "http://www.whitehouse.gov/sites/default/files/imagecache/admin_official_lowres/administration-official/ao_image/president_official_portrait_hires.jpg",
+   "channels": [
+    {
+     "type": "GooglePlus",
+     "id": "+whitehouse"
+    },
+    {
+     "type": "Facebook",
+     "id": "whitehouse"
+    },
+    {
+     "type": "Twitter",
+     "id": "whitehouse"
+    },
+    {
+     "type": "YouTube",
+     "id": "barackobama"
+    }
+   ]
+  },
+  {
+   "name": "Joseph R. Biden",
+   "address": [
+    {
+     "line1": "The White House",
+     "line2": "1600 pennsylvania avenue nw",
+     "city": "washington",
+     "state": "DC",
+     "zip": "20500"
+    }
+   ],
+   "party": "Democratic",
+   "phones": [
+    "(202) 456-1111"
+   ],
+   "urls": [
+    "http://www.whitehouse.gov/"
+   ],
+   "photoUrl": "http://www.whitehouse.gov/sites/default/files/imagecache/admin_official_lowres/administration-official/ao_image/vp_portrait.jpeg",
+   "channels": [
+    {
+     "type": "GooglePlus",
+     "id": "+whitehouse"
+    },
+    {
+     "type": "Facebook",
+     "id": "whitehouse"
+    },
+    {
+     "type": "Twitter",
+     "id": "whitehouse"
+    }
+   ]
+  },
+  {
+   "name": "Rand Paul",
+   "address": [
+    {
+     "line1": "124 Russell Senate Office Building",
+     "city": "washington",
+     "state": "DC",
+     "zip": "20510"
+    }
+   ],
+   "party": "Republican",
+   "phones": [
+    "(202) 224-4343"
+   ],
+   "urls": [
+    "http://www.paul.senate.gov/"
+   ],
+   "photoUrl": "http://bioguide.congress.gov/bioguide/photo/P/P000603.jpg",
+   "channels": [
+    {
+     "type": "GooglePlus",
+     "id": "+senatorrandpaul"
+    },
+    {
+     "type": "Facebook",
+     "id": "SenatorRandPaul"
+    },
+    {
+     "type": "Twitter",
+     "id": "SenRandPaul"
+    },
+    {
+     "type": "YouTube",
+     "id": "senatorrandpaul"
+    },
+    {
+     "type": "YouTube",
+     "id": "SenatorRandPaul"
+    }
+   ]
+  },
+  {
+   "name": "Mitch McConnell",
+   "address": [
+    {
+     "line1": "317 Russell Senate Office Building",
+     "city": "washington",
+     "state": "DC",
+     "zip": "20510"
+    }
+   ],
+   "party": "Republican",
+   "phones": [
+    "(202) 224-2541"
+   ],
+   "urls": [
+    "http://www.mcconnell.senate.gov/public/"
+   ],
+   "photoUrl": "http://www.mcconnell.senate.gov/public/?a=Files.Serve&File_id=aa26f34f-beb3-4c62-99e7-bcf98127ece6",
+   "channels": [
+    {
+     "type": "Facebook",
+     "id": "mitchmcconnell"
+    },
+    {
+     "type": "Twitter",
+     "id": "McConnellPress"
+    },
+    {
+     "type": "YouTube",
+     "id": "RepublicanLeader"
+    }
+   ]
+  },
+  {
+   "name": "Mary Lou Marzian",
+   "address": [
+    {
+     "line1": "702 Capitol Ave\nAnnex Room 357E",
+     "city": "frankfort",
+     "state": "KY",
+     "zip": "40601"
+    },
+    {
+     "line1": "702 Capitol Ave\nAnnex Room 357E",
+     "city": "frankfort",
+     "state": "KY",
+     "zip": "40601"
+    }
+   ],
+   "party": "Democratic",
+   "phones": [
+    "(502) 564-8100 ext. 643"
+   ],
+   "urls": [
+    "http://www.lrc.ky.gov/legislator/H034.htm"
+   ],
+   "photoUrl": "http://www.lrc.ky.gov/pubinfo/thumbnails/House34.jpg",
+   "emails": [
+    "MaryLou.Marzian@lrc.ky.gov"
+   ]
+  },
+  {
+   "name": "Morgan McGarvey",
+   "address": [
+    {
+     "line1": "702 Capitol Ave",
+     "line2": "Annex Room 255",
+     "line3": "",
+     "city": "Frankfort",
+     "state": "KY",
+     "zip": "40601"
+    },
+    {
+     "line1": "2250 Winston Ave",
+     "line2": "",
+     "line3": "",
+     "city": "Louisville",
+     "state": "KY",
+     "zip": "40205"
+    }
+   ],
+   "party": "Democratic",
+   "phones": [
+    "(502) 564-8100 ext. 621"
+   ],
+   "urls": [
+    "http://www.lrc.ky.gov/legislator/S019.htm"
+   ],
+   "photoUrl": "http://www.lrc.ky.gov/pubinfo/thumbnails/Senate19.jpg",
+   "emails": [
+    "Morgan.McGarvey@lrc.ky.gov"
+   ],
+   "channels": [
+    {
+     "type": "Twitter",
+     "id": "morganmcgarvey"
+    },
+    {
+     "type": "Facebook",
+     "id": "StateSenatorMorganMcGarvey"
+    }
+   ]
+  },
+  {
+   "name": "Steve Beshear",
+   "address": [
+    {
+     "line1": "700 capitol avenue",
+     "city": "frankfort",
+     "state": "KY",
+     "zip": "40601"
+    }
+   ],
+   "party": "Democratic",
+   "phones": [
+    "(502) 564-2611"
+   ],
+   "urls": [
+    "http://governor.ky.gov/Pages/default.aspx"
+   ],
+   "photoUrl": "http://governor.ky.gov/SiteCollectionImages/GovBeshear_300.jpg",
+   "emails": [
+    "governor@ky.gov"
+   ],
+   "channels": [
+    {
+     "type": "Facebook",
+     "id": "13654392589"
+    },
+    {
+     "type": "Twitter",
+     "id": "govstevebeshear"
+    },
+    {
+     "type": "YouTube",
+     "id": "governorbeshear"
+    }
+   ]
+  },
+  {
+   "name": "Crit Luallen",
+   "address": [
+    {
+     "line1": "700 capitol avenue",
+     "city": "frankfort",
+     "state": "KY",
+     "zip": "40601"
+    }
+   ],
+   "party": "Democratic",
+   "phones": [
+    "(502) 564-2611"
+   ],
+   "urls": [
+    "http://ltgovernor.ky.gov/Pages/Default.aspx"
+   ],
+   "emails": [
+    "ltgovernor@ky.gov"
+   ]
+  },
+  {
+   "name": "Tony Lindauer",
+   "address": [
+    {
+     "line1": "531 court place",
+     "city": "louisville",
+     "state": "KY",
+     "zip": "40202"
+    }
+   ],
+   "party": "Unknown",
+   "phones": [
+    "(502) 574-6380"
+   ],
+   "urls": [
+    "http://jeffersonpva.ky.gov/about/tony-lindauer/"
+   ],
+   "emails": [
+    "tlindauer@pvalouky.net"
+   ],
+   "channels": [
+    {
+     "type": "Facebook",
+     "id": "tony.lindauer"
+    }
+   ]
+  },
+  {
+   "name": "Barbara Holsclaw",
+   "address": [
+    {
+     "line1": "527 w jefferson street",
+     "city": "louisville",
+     "state": "KY",
+     "zip": "40202"
+    }
+   ],
+   "party": "Unknown",
+   "phones": [
+    "(502) 574-5700"
+   ],
+   "urls": [
+    "http://www.jeffersoncountyclerk.org/"
+   ],
+   "emails": [
+    "countyclerk@jeffersoncountyclerk.org"
+   ]
+  },
+  {
+   "name": "Greg Fischer",
+   "address": [
+    {
+     "line1": "527 w. jefferson st.",
+     "city": "louisville",
+     "state": "KY",
+     "zip": "40202"
+    }
+   ],
+   "party": "Unknown",
+   "phones": [
+    "(502) 574-2003"
+   ],
+   "urls": [
+    "http://www.louisvilleky.gov/Mayor/"
+   ],
+   "channels": [
+    {
+     "type": "Facebook",
+     "id": "180796518617987"
+    },
+    {
+     "type": "Twitter",
+     "id": "louisvillemayor"
+    }
+   ]
+  },
+  {
+   "name": "Barbara Weakley-Jones",
+   "address": [
+    {
+     "line1": "810 Barret Avenue 7th",
+     "city": "louisville",
+     "state": "KY",
+     "zip": "40204"
+    }
+   ],
+   "party": "Unknown",
+   "phones": [
+    "(502) 574-6262"
+   ],
+   "urls": [
+    "http://www.louisvilleky.gov/coroner/"
+   ],
+   "emails": [
+    "barbara.weakley-jones@louisvilleky.gov"
+   ]
+  },
+  {
+   "name": "John Aubrey",
+   "address": [
+    {
+     "line1": "531 court place",
+     "city": "louisville",
+     "state": "KY",
+     "zip": "40202"
+    }
+   ],
+   "party": "Unknown",
+   "phones": [
+    "(502) 574-5400"
+   ],
+   "urls": [
+    "http://www.jcsoky.org/"
+   ],
+   "emails": [
+    "jaubrey@jcsoky.org"
+   ]
+  },
+  {
+   "name": "Michael O'Connell",
+   "address": [
+    {
+     "line1": "600 west jefferson street",
+     "city": "louisville",
+     "state": "KY",
+     "zip": "40202"
+    }
+   ],
+   "party": "Unknown",
+   "phones": [
+    "(502) 574-6336"
+   ],
+   "urls": [
+    "http://www.louisvilleky.gov/CountyAttorney/"
+   ],
+   "emails": [
+    "Mike.O-connell@louisvilleky.gov"
+   ]
+  },
+  {
+   "name": "Bryan Mathews",
+   "address": [
+    {
+     "line1": "710 West Main Street",
+     "line2": "4th Floor",
+     "city": "louisville",
+     "state": "KY",
+     "zip": "40202"
+    }
+   ],
+   "party": "Democratic",
+   "phones": [
+    "(502) 416-1633"
+   ],
+   "emails": [
+    "JeffersonCountyJudge@gmail.com"
+   ],
+   "channels": [
+    {
+     "type": "GooglePlus",
+     "id": "108061144075856960015"
+    },
+    {
+     "type": "Twitter",
+     "id": "JudgeMathews"
+    }
+   ]
+  },
+  {
+   "name": "Todd Hollenbach",
+   "address": [
+    {
+     "line1": "1050 US Highway 127 South",
+     "line2": "Suite 100",
+     "city": "frankfort",
+     "state": "KY",
+     "zip": "40601"
+    }
+   ],
+   "party": "Democratic",
+   "phones": [
+    "(502) 564-4722"
+   ],
+   "urls": [
+    "http://www.treasury.ky.gov/"
+   ],
+   "emails": [
+    "treasury.web@ky.gov"
+   ]
+  },
+  {
+   "name": "Adam Edelen",
+   "address": [
+    {
+     "line1": "209 st. clair st.",
+     "city": "frankfort",
+     "state": "KY",
+     "zip": "40601"
+    }
+   ],
+   "party": "Democratic",
+   "phones": [
+    "(502) 564-5841"
+   ],
+   "urls": [
+    "http://auditor.ky.gov/Pages/default.aspx"
+   ],
+   "emails": [
+    "Adam.Edelen@auditor.ky.gov"
+   ],
+   "channels": [
+    {
+     "type": "Facebook",
+     "id": "344250678942193"
+    },
+    {
+     "type": "Twitter",
+     "id": "AuditorKY"
+    }
+   ]
+  },
+  {
+   "name": "Jack Conway",
+   "address": [
+    {
+     "line1": "700 capitol avenue",
+     "city": "frankfort",
+     "state": "KY",
+     "zip": "40601"
+    }
+   ],
+   "party": "Democratic",
+   "phones": [
+    "(502) 696-5300"
+   ],
+   "urls": [
+    "http://ag.ky.gov/Pages/default.aspx"
+   ],
+   "emails": [
+    "attorney.general@ag.ky.gov"
+   ],
+   "channels": [
+    {
+     "type": "Facebook",
+     "id": "kyagconway"
+    },
+    {
+     "type": "Twitter",
+     "id": "kyoag"
+    }
+   ]
+  },
+  {
+   "name": "Alison Lundergan Grimes",
+   "address": [
+    {
+     "line1": "700 capital ave.",
+     "city": "frankfort",
+     "state": "KY",
+     "zip": "40601"
+    }
+   ],
+   "party": "Democratic",
+   "phones": [
+    "(502) 564-3490"
+   ],
+   "urls": [
+    "http://www.sos.ky.gov/Pages/default.aspx"
+   ],
+   "channels": [
+    {
+     "type": "Facebook",
+     "id": "Kentucky-Office-of-the-Secretary-of-State"
+    },
+    {
+     "type": "Twitter",
+     "id": "KySecofState"
+    }
+   ]
+  },
+  {
+   "name": "James Comer",
+   "party": "Republican",
+   "phones": [
+    "(502) 564-4696"
+   ],
+   "urls": [
+    "http://www.kyagr.com/"
+   ],
+   "emails": [
+    "ag.web@ky.gov"
+   ],
+   "channels": [
+    {
+     "type": "Facebook",
+     "id": "kentuckyag"
+    },
+    {
+     "type": "Twitter",
+     "id": "kentuckyag"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+The goal of Poliwonk is to build a service to embolden the democratic aspirations of human beings.
+Poliwonk is a service to provide the tools and community to support the aspirations of humans wishing exercise their fundamental rights.
+Connecting people with their governments and providing mechanisms to engage in politics.
+
+There are many barriers to the average citizen wishing to become more informed and politically engaged.
+One particular barrier is easy access to information about elections and the candidates that are running.
+Critical to having a say in any participatory democracy is the act of voting. Of course, this is only as
+meaningful as one has a clear understanding of the issues and positions in a particular race.
+
+We are currently developing Follow Your Leader a service to connect you with your representatives.
+
+Did you know that there is no official database of all elected officials in the United States?
+
+We are piloting a project that will crowd source a list of all elected officials according to voting district.
+
+This is a rather ambitious project that I hope will provide a template for curating other data.
+
+We can't wait for government to provide access to, we have to go out and get it.
+
+Alot of organiztions have been looking at the issue.

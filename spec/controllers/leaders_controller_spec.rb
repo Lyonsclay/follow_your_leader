@@ -3,10 +3,21 @@ require 'rails_helper'
 describe LeadersController do
   
   describe "GET new" do
+    let(:reps) { instance_double(RepsGetter) }
+    
     before do
+      leaders = [Leader.new]
+      allow(RepsGetter).to receive(:new).and_return(reps)
+      allow_any_instance_of(RepsGetter).to receive(:get).
+                                            and_return(leaders)
+      allow(reps).to receive(:get).and_return(leaders)
       get :new
     end
-
+    
+    it "stubs" do
+      expect(RepsGetter.new("some place").get).to be_a Array 
+    end
+    
     it "has a 200 status code" do
       expect(response.status).to eq(200)
     end

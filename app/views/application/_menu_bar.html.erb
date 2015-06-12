@@ -1,0 +1,22 @@
+<div class="main">
+    <div class="banner">
+	<%= image_tag("Poliwonk Logo gray-06.png") %>
+    </div>
+
+    <div class="menu_bar">
+	<ul>
+	    <li><%= link_to "FORUM", "/forum" %></li>
+	    <li><%= link_to "MISSION", "/forum#!/mission" %></li>
+	</ul>
+    </div>
+    <div class="side">
+    </div>
+
+    <%= yield %>
+
+    <!-- Produces xml properly formatted br tags. -->
+    <% 4.times do %>
+    <%= tag("br") %>
+    <% end %>
+    <p>© 2015 Poliwonk, LLC</p>
+</div>

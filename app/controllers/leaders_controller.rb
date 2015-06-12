@@ -6,7 +6,7 @@ class LeadersController < ApplicationController
 
   def create
     address = params[:voter_district][:address]
-    @leaders = Leader.all
+    @leaders = RepsGetter.new(address).get
     render action: "index"
   end
 

@@ -1,8 +1,14 @@
 require "rails_helper"
 
-feature "Visiting the landing page" do
-  before do
+feature "Getting reps" do
+  before(:each) do
     visit root_path
+    leaders = [Leader.new]
+    allow(RepsGetter).to receive(:get).and_return(leaders)
+  end
+  
+  scenario "it can be stubbed" do
+    expect(RepsGetter.get("Ibiza").count).to eq(1)
   end
   
   scenario "displays the title" do
@@ -17,7 +23,7 @@ feature "Visiting the landing page" do
     expect(page).to have_selector("input[type=submit][value='Get Reps']")
   end
   
-  scenario "visits leaders" do
+  scenario "clicks Get Reps" do
     click_button "Get Reps"
     expect(current_path).to eq leaders_path
   end
