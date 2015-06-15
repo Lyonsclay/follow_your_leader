@@ -1,4 +1,4 @@
-$('.new_voter_district').ready(setAddress);
+//$('.new_voter_district').ready(setAddress);
 
 function setAddress() {
     geolocate().then(getAddress).then(preFill);

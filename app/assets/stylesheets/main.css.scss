@@ -4,7 +4,7 @@ body {
 }
 
 .main {
-    border: 2px none pink;
+    border: 2px solid pink;
     position: absolute;
     left: 0;
     right: 0;
@@ -16,112 +16,46 @@ body {
 .banner {
     height: 0px;
     margin-top: 0px;
-    margin-left: 14px;
+    margin-left: 0px;
 }
 
-.notice {
-    margin-top: 145px;
-    text-align: center;
-    font-size: 21px;
-    font-family: "nunito";
-    font-weight: 100;
-    color: #dee4d8;
-    color: brown;
-    letter-spacing: 1px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 250px;
-    width: 500px;
-    border: 2px solid DarkGoldenRod;
-    border-radius: 20px;
+/* .notice { */
+/*     margin-top: 145px; */
+/*     text-align: center; */
+/*     font-size: 21px; */
+/*     font-family: "Open Sans"; */
+/*     font-weight: 100; */
+/*     color: #dee4d8; */
+/*     color: brown; */
+/*     letter-spacing: 1px; */
+/*     padding-left: 20px; */
+/*     padding-right: 20px; */
+/*     margin-left: 250px; */
+/*     width: 500px; */
+/*     border: 2px solid DarkGoldenRod; */
+/*     border-radius: 20px; */
 
-    a[href^="mailto"] {
-        color: DarkGoldenRod;
-    }
-}
+/*     a[href^="mailto"] { */
+/*         color: DarkGoldenRod; */
+/*     } */
+/* } */
 
 .menu_bar {
     margin-top: 121px;
-    margin-left: 116px;
-    margin-right: 0px;
-    border: 2px none Aqua;
-
+    pading: 0;
+    border: 2px solid Aqua;
+    list-style-type: none;
+    display: table;
+    table-layout: fixed;
+    width: inherit;
+    
     li {
-        display: inline-block;
-        padding-left: 12px;
-        padding-right: 14px;
+        display: table-cell;
+        width: 100%;
     }
 
     a:hover {
         color: ivory;
-    }
-}
-
-#mini-cart {
-    margin: auto;
-    float: right;
-    margin-right: 110px;
-    width: 210px;
-    border: 2px solid #A70301;
-    border-radius: 5px;
-    margin-top: 50px;
-    padding-left: 7px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-right: 7px;
-    font: 14px "Helvetica Neue", sans-serif;
-    font-weight: 200;
-    color: #dee4d8;
-
-    table {
-        border-collapse: collapse;
-        width: 210px;
-    }
-
-    thead {
-        border-bottom: 1px solid #dee4d8;
-    }
-
-    thead tr td {
-        padding-bottom: 3px;
-        font-weight: 500;
-    }
-
-    tbody tr td {
-        padding-top: 4px;
-    }
-
-    .buttons a {
-        text-decoration: none;
-        margin-right: 5px;
-    }
-
-    .buttons {
-        margin-top: 10px;
-    }
-
-    .quantity {
-        font-weight: 500;
-        margin-right: 20px;
-        padding-left: 6px;
-    }
-
-    .name {
-        padding-right: 15px;
-    }
-
-    .sub-total td {
-        border-top: 2px solid #A70301;
-        padding-top: 3px;
-    }
-
-    td.price {
-        margin-right: 20px;
-    }
-
-    .image-url {
-        height: inherit;
-        margin-left: 60px;
     }
 }
 
@@ -141,23 +75,26 @@ body {
         z-index: -1;
     }
 
-    .statement {
+    .statement > * {
+        @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+        @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
         margin-top: 20px;
         margin-bottom: 40px;
         text-indent: 0px;
-        font: 20px "Helvetica Neue", sans-serif;
-        font-weight: 200;
-        color: #FAF2EC;
-        color: silver;
+        font: 20px "Open Sans", sans-serif;
+        font: 20px "Droid Sans", "Helvetica Neue", sans-serif;
+        font: 20px "Source Sans Pro", sans-serif;
+        font-weight: 300;
+        color: gray;
 
         @media screen and (max-device-width: 480px) {
             color: white;
-            font-weight: 400
+            //font-weight: 400
         }
 
         @media only screen and (-webkit-min-device-pixel-ratio: 2) {
             color: white;
-            font-weight: 400
+            //font-weight: 400
         }
 
         letter-spacing: .5px;
