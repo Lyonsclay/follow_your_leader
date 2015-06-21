@@ -3,17 +3,25 @@
     <head>
         <title>Follow Your Leader</title>
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Source+Open+Sans:300", media: 'all', 'data-turbolinks-track' => true %>
         <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:300", media: 'all', 'data-turbolinks-track' => true %>
-        <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?sensor=false", "data-turbolinks-track" => true %>
-        <%= javascript_include_tag "https://apis.google.com/js/client.js?onload=load", "data-turbolinks-track" => true %>
+        <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Roboto:400,100', media: 'all', 'data-turbolinks-track' => true %>
+        <!-- <%#= javascript_include_tag "https://maps.googleapis.com/maps/api/js?sensor=false", "data-turbolinks-track" => true %> -->
+        <!-- <%#= javascript_include_tag "https://apis.google.com/js/client.js?onload=load", "data-turbolinks-track" => true %> -->
         <%= javascript_include_tag "https://www.promisejs.org/polyfills/promise-7.0.1.min.js", "data-turbolinks-track" => true %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
         <%= csrf_meta_tags %>
         <%= tag :meta, name: "google-api-key", content: ENV['GOOGLE_API_KEY'] %>
     </head>
     <body>
+        <div class="main">
+            <div class="header">
+                <%= render "header" %>
+            </div>
+            
+            <%= yield %>
 
-        <%= render "menu_bar" %>
-
+            <%= render "footer" %>
+        </div>
     </body>
 </html>

@@ -1,11 +1,11 @@
 /* START_HIGHLIGHT */
 body {
     background-color: white;
+    margin: 0;
 }
 
 .main {
-    border: 2px solid pink;
-    position: absolute;
+    border: 0px solid pink;
     left: 0;
     right: 0;
     margin: auto;
@@ -13,49 +13,48 @@ body {
     width: 1050px;
 }
 
-.banner {
-    height: 0px;
-    margin-top: 0px;
-    margin-left: 0px;
-}
-
-/* .notice { */
-/*     margin-top: 145px; */
-/*     text-align: center; */
-/*     font-size: 21px; */
-/*     font-family: "Open Sans"; */
-/*     font-weight: 100; */
-/*     color: #dee4d8; */
-/*     color: brown; */
-/*     letter-spacing: 1px; */
-/*     padding-left: 20px; */
-/*     padding-right: 20px; */
-/*     margin-left: 250px; */
-/*     width: 500px; */
-/*     border: 2px solid DarkGoldenRod; */
-/*     border-radius: 20px; */
-
-/*     a[href^="mailto"] { */
-/*         color: DarkGoldenRod; */
-/*     } */
-/* } */
-
-.menu_bar {
-    margin-top: 121px;
-    pading: 0;
-    border: 2px solid Aqua;
-    list-style-type: none;
-    display: table;
-    table-layout: fixed;
-    width: inherit;
+.header {
+    background-image: linear-gradient(AliceBlue, LightBlue);
+    -moz-box-shadow: inset 0 0 30px 30px white;
+    -webkit-box-shadow: inset 0 0 30px 30px white;
+    box-shadow: inset 0 -40px 30px 30px white;
     
-    li {
-        display: table-cell;
-        width: 100%;
+    .banner {
+        height: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 
-    a:hover {
-        color: ivory;
+    .menu_bar {
+        letter-spacing: 0.8px;
+        font-weight: 100;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        margin-top: 40px;
+        padding: 0;
+        list-style-type: none;
+        display: table;
+        table-layout: fixed;
+        width: inherit;
+
+        ul {
+            padding-left: 0px;
+        }
+        
+        li {
+            padding-left: 50px;
+            padding-right: 50px;
+            display: table-cell;
+            width: 100%;
+        }
+
+        a {
+            color: DarkGray;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: LightGray;
+        }
     }
 }
 
@@ -64,37 +63,29 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    width: 610px;
     margin-top: 0px;
-
-    img {
-        margin-top: 50px;
-        margin-left: 0px;
-        border: 3px solid DarkRed;
-        border-radius: 20px;
-        z-index: -1;
-    }
+    display: table;
+    width: 500px;
 
     .statement > * {
-        @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
-        @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+        /* @import url(http://fonts.googleapis.com/css?family=Droid+Sans); */
+        font-family: "Source Open Sans", Helvetica, Arial, sans-serif;
         margin-top: 20px;
         margin-bottom: 40px;
         text-indent: 0px;
-        font: 20px "Open Sans", sans-serif;
-        font: 20px "Droid Sans", "Helvetica Neue", sans-serif;
-        font: 20px "Source Sans Pro", sans-serif;
         font-weight: 300;
         color: gray;
-
+        margin-left: auto;
+        margin-right: auto;
+        
         @media screen and (max-device-width: 480px) {
             color: white;
-            //font-weight: 400
+            font-weight: 400
         }
 
         @media only screen and (-webkit-min-device-pixel-ratio: 2) {
             color: white;
-            //font-weight: 400
+            font-weight: 400
         }
 
         letter-spacing: .5px;
@@ -159,3 +150,26 @@ body {
 }
 
 /* END_HIGHLIGHT */
+
+
+/* .notice { */
+/*     margin-top: 145px; */
+/*     text-align: center; */
+/*     font-size: 21px; */
+/*     font-family: "Open Sans"; */
+/*     font-weight: 100; */
+/*     color: #dee4d8; */
+/*     color: brown; */
+/*     letter-spacing: 1px; */
+/*     padding-left: 20px; */
+/*     padding-right: 20px; */
+/*     margin-left: 250px; */
+/*     width: 500px; */
+/*     border: 2px solid DarkGoldenRod; */
+/*     border-radius: 20px; */
+
+/*     a[href^="mailto"] { */
+/*         color: DarkGoldenRod; */
+/*     } */
+/* } */
+

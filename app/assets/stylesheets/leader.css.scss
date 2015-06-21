@@ -1,0 +1,15 @@
+.leader {
+    ul {
+        list-style-type: none;
+        border: 2px solid gray;
+        padding: 0;
+    }
+    
+    img {
+        margin-top: 0px;
+        margin-left: 0px;
+        max-width: 150px;
+        max-height: 200px;
+        z-index: -1;
+    }
+}

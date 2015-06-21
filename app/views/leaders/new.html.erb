@@ -1,12 +1,18 @@
 <div class="content">
   <div class="statement">
-
-    <h2>Follow your political representatives.</h2>
-
-    <%= form_for VoterDistrict.new, url: leaders_path do |f| %>
-    <%= f.label "Enter address" %>
-    <%= f.text_field :address %>
-    <%= f.submit "Get Reps" %>
-    <% end %>
+    <table>
+      <tr>
+        <td>Follow your political representatives.</td>
+      </tr>
+      <tr>
+        <td>
+          <%= form_for VoterDistrict.new, url: leaders_path do |f| %>
+          <%= f.label "Enter address" %>
+          <%= f.text_field :address %>
+          <%= f.submit "Get Reps" %>
+          <% end %>
+        </td>
+      </tr>
+    </table>
   </div>
 </div>
