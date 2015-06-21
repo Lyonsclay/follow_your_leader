@@ -1,13 +1,28 @@
-.leader {
-    ul {
-        list-style-type: none;
-        border: 2px solid gray;
-        padding: 0;
+.leader-wrapper {
+    border: 2px solid gray;
+    overflow: hidden;
+    height: 20%;
+    
+    .leader {
+        display: table-row;
+    }
+
+    .leader > div {
+        display: table-cell;
+    }
+    
+    #leader-photo {
+    }
+
+    #leader-id {
+        vertical-align:top;
+
+        li {
+            list-style-type: none;
+        }
     }
     
     img {
-        margin-top: 0px;
-        margin-left: 0px;
         max-width: 150px;
         max-height: 200px;
         z-index: -1;
