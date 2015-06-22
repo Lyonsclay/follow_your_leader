@@ -1,8 +1,6 @@
 .leader {
     border: 2px solid gray;
     overflow: hidden;
-    padding-right: 330px;
-    margin-bottom: -20px;
     
     .leader > div {
     }
@@ -12,13 +10,17 @@
     }
 
     #leader-id {
-        float: right;
+        float: left;
         vertical-align:top;
-        margin-right: -330px;
-        width: 300px;
+
+        ul {
+            padding-left: 12px;
+            margin-top: 9px;
+        }
         
         li {
             list-style-type: none;
+            margin-bottom: 7px;
         }
     }
     
