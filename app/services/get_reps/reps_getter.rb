@@ -24,7 +24,8 @@ class RepsGetter
   end
   
   def assign_offices
-    offices = @hash["offices"]
+    offices = get_offices()
+    
     @leaders.each_with_index do |leader, i|
       leader.office = offices[i]
     end
@@ -34,14 +35,16 @@ class RepsGetter
     params.except("address", "phones", "emails")
   end
 
-  def offices
+  def get_offices
     list = []
     offices = @hash["offices"]
+    
     offices.each do |office|
       office["officialIndices"].each do |index|
         list << office["name"]
       end
     end
+    
     list
   end
 
