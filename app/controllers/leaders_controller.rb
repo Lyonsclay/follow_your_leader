@@ -6,7 +6,9 @@ class LeadersController < ApplicationController
 
   def create
     address = params[:voter_district][:address]
-    @leaders = RepsGetter.new(address).get
+    @leaders = Rails.cache.fetch("leaders/#{address}", expires_in: 2.days) do
+      RepsGetter.new(address).get
+    end
     render action: "index"
   end
 
