@@ -25,29 +25,20 @@ body {
   .banner {
     height: 260px;
     width: 100%;
-
-    div.title {
-      position: absolute;
-      z-index: 2;
-      margin-left: 35%;
-      margin-top: 40px;
-      //opacity: 0.6;
-      clip-path: url(#title);
-    }
-
-    div.radial {
-      margin-left: 0px;
-      position: absolute;
-      width: 100%;
-      z-index: 1;
-      clip-path: url(#title);
-    }
-
-    div.clip-path {
-      position: absolute;
-    }
-
+    
     svg {
+      width: 100%;
+      height: inherit;
+
+      #alpha {
+        fill: blue;
+        opacity: 0.5;
+      }
+
+      #base {
+        fill: orange;
+        mask: url(#pw-title);
+      }
     }
   }
 
