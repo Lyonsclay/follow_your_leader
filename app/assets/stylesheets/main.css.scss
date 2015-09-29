@@ -1,151 +1,176 @@
 /* START_HIGHLIGHT */
 body {
-    background-color: white;
-    margin: 0;
+  //background-color: MintCream;
+  margin: 0px;
 }
 
 .main {
-    border: 0px solid pink;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-top: 0px;
-    width: 1050px;
+  border: 0px solid pink;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 0px;
+  width: 100%;
 }
 
 .header {
-    background-image: linear-gradient(AliceBlue, LightBlue);
-    -moz-box-shadow: inset 0 0 30px 30px white;
-    -webkit-box-shadow: inset 0 0 30px 30px white;
-    box-shadow: inset 0 -40px 30px 30px white;
-    
-    .banner {
-        height: 0px;
-        margin-top: 0px;
-        margin-left: 0px;
+  height: 260px;
+  background-image: image-url("Eric_Garner_Protest_Chicago_Dec_4_2014.jpg");
+  background-position: 0px -2000px;
+  background-size: cover;
+  //background-color: darkslategray;
+  //background-blend-mode: luminosity;
+  box-shadow: inset 0 -5px 5px 15px #104e8b;
+
+  .banner {
+    height: 260px;
+    width: 100%;
+
+    div.title {
+      position: absolute;
+      z-index: 2;
+      margin-left: 35%;
+      margin-top: 40px;
+      //opacity: 0.6;
+      clip-path: url(#title);
     }
 
-    .menu_bar {
-        letter-spacing: 0.8px;
-        font-weight: 100;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-        margin-top: 40px;
-        padding: 0;
-        list-style-type: none;
-        display: table;
-        table-layout: fixed;
-        width: inherit;
-
-        ul {
-            padding-left: 0px;
-        }
-        
-        li {
-            padding-left: 50px;
-            padding-right: 50px;
-            display: table-cell;
-            width: 100%;
-        }
-
-        a {
-            color: DarkGray;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: LightGray;
-        }
+    div.radial {
+      margin-left: 0px;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      clip-path: url(#title);
     }
+
+    div.clip-path {
+      position: absolute;
+    }
+
+    svg {
+    }
+  }
+
+  .menu_bar {
+    letter-spacing: 0.0px;
+    //font: 200 20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 40px;
+    padding: 0;
+    list-style-type: none;
+    display: table;
+    table-layout: fixed;
+    width: inherit;
+
+    ul {
+      padding-left: 0px;
+      }
+
+      li {
+        padding-left: 50px;
+        padding-right: 50px;
+        display: table-cell;
+        width: 100%;
+      }
+
+      a {
+        color: DarkGray;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: LightGray;
+      }
+  }
 }
 
 .content {
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: auto;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 0px;
+  display: table;
+  width: 550px;
+
+  .statement > * {
+    /* @import url(http://fonts.googleapis.com/css?family=Droid+Sans); */
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-indent: 0px;
+    font-weight: 300;
+    color: gray;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-device-width: 480px) {
+      color: white;
+      font-weight: 400
+      }
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+        color: white;
+        font-weight: 400
+      }
+
+      letter-spacing: .5px;
+  }
+
+  .text {
     margin-top: 0px;
-    display: table;
-    width: 550px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-left: 0px solid silver;
+    border-right: 0px solid silver;
 
-    .statement > * {
-        /* @import url(http://fonts.googleapis.com/css?family=Droid+Sans); */
-        font-family: "Source Open Sans", Helvetica, Arial, sans-serif;
-        margin-top: 20px;
-        margin-bottom: 40px;
-        text-indent: 0px;
-        font-weight: 300;
-        color: gray;
-        margin-left: auto;
-        margin-right: auto;
-        
-        @media screen and (max-device-width: 480px) {
+    p {
+      text-indent: 0px;
+      font: 20px "Helvetica Neue", sans-serif;
+      font-weight: 200;
+      letter-spacing: 1px;
+      color: gray;
+
+      @media screen and (max-device-width: 480px) {
+        color: white;
+        font-weight: 400
+          }
+
+          @media only screen and (-webkit-min-device-pixel-ratio: 2) {
             color: white;
             font-weight: 400
-        }
+          }
 
-        @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-            color: white;
-            font-weight: 400
-        }
-
-        letter-spacing: .5px;
-    }
-
-    .text {
-        margin-top: 0px;
-        margin-left: 20px;
-        margin-right: 20px;
-        border-left: 0px solid silver;
-        border-right: 0px solid silver;
-
-        p {
-            text-indent: 0px;
-            font: 20px "Helvetica Neue", sans-serif;
-            font-weight: 200;
-            letter-spacing: 1px;
-            color: gray;
-
-            @media screen and (max-device-width: 480px) {
-                color: white;
-                font-weight: 400
-            }
-
-            @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-                color: white;
-                font-weight: 400
-            }
-
-            text-align: left;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-    }
+          text-align: left;
+          padding-left: 20px;
+          padding-right: 20px;
+      }
+  }
 }
 
 .footer {
-    margin-top: 30px;
-    margin-left: 120px;
+  margin-top: 30px;
+  margin-left: 120px;
 
-    p {
-        font: 14px "Helvetica Neue", sans-serif;
-        font-weight: 200;
-        color: DimGray;
+  p {
+    font: 14px "Helvetica Neue", sans-serif;
+    font-weight: 200;
+    color: DimGray;
 
-        @media screen and (max-device-width: 480px) {
-            color: white;
-            font-weight: 400
-        }
+    @media screen and (max-device-width: 480px) {
+      color: white;
+      font-weight: 400
+      }
 
-        @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-            color: white;
-            font-weight: 400
-        }
+      @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+        color: white;
+        font-weight: 400
+      }
 
-        letter-spacing: 1px;
-        display: inline-block;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+      letter-spacing: 1px;
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
 }
 
 /* END_HIGHLIGHT */
