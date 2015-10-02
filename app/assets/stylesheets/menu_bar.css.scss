@@ -1,0 +1,30 @@
+.menu_bar {
+  letter-spacing: 0.0px;
+  //font: 200 20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-top: 40px;
+  padding: 0;
+  list-style-type: none;
+  display: table;
+  table-layout: fixed;
+  width: inherit;
+
+  ul {
+    padding-left: 0px;
+  }
+}
+
+li {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: table-cell;
+  width: 100%;
+}
+
+a {
+  color: DarkGray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: LightGray;
+}

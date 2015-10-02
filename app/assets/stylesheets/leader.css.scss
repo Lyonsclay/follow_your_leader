@@ -1,38 +1,50 @@
 .leader {
-    border: 2px solid gray;
-    overflow: hidden;
-    
-    .leader > div {
-    }
-    
-    #leader-photo {
-        float: left;
+  background-color: #f2f2f2;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: 200px;
+
+  #leader-photo {
+    float: left;
+  }
+
+  #leader-id {
+    width: auto;
+    float: left;
+    vertical-align:top;
+    bottom: -10px;
+
+    ul {
+      float: left;
+      width: auto;
+      margin-top: 9px;
+      padding-left: 10px;
+      padding-right: 0px;
     }
 
-    #leader-id {
-        float: left;
-        vertical-align:top;
+    li {
+      display: block;
+      float: left;
+      clear: left;
+      width: auto;
+      list-style-type: none;
+      margin-bottom: 7px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
 
-        ul {
-            padding-left: 12px;
-            margin-top: 9px;
-        }
-        
-        li {
-            list-style-type: none;
-            margin-bottom: 7px;
-        }
-    }
-    
-    #leader-photo, #leader-id {
-        padding-bottom: 99999px;
-        margin-bottom: -99999px;
-    }
-    
-    img {
-        max-width: 150px;
-        max-height: 200px;
-        z-index: -1;
-        display: block;
-    }
+  #leader-photo, #leader-id {
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+  }
+
+  img {
+    //max-width: 150px;
+    height: 200px;
+    z-index: -1;
+    filter: grayscale(20%);
+    -webkit-filter: grayscale(20%);
+  }
 }

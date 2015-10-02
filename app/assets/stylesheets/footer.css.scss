@@ -1,0 +1,26 @@
+.footer {
+  margin-top: 30px;
+  margin-left: 120px;
+
+  p {
+    font: 14px "Helvetica Neue", sans-serif;
+    font-weight: 200;
+    color: DimGray;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media screen and (max-device-width: 480px) {
+      color: white;
+      font-weight: 400
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+      color: white;
+      font-weight: 400
+    }
+  }
+}
+
+

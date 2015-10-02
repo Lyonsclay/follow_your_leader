@@ -1,14 +1,38 @@
-<div class="main">
-  <div class="banner">
-    <div class="title-header">
-      <%= render "pw_header" %>
-    </div>
+<div class="banner">
+  <div class="header-photo">
+
   </div>
 
-  <div class="menu_bar">
-    <ul>
-      <li><%= link_to image_tag("PW_forum.png", height: "40"), "/forum" %></li>
-      <li><%= link_to image_tag("PW_mission.png", height: "40"), "/forum#!/mission" %></li>
-    </ul>
+  <div class="title-graphics">
+    <svg>
+      <defs>
+        <filter id="blur">
+          <feGaussianBlur stdDeviation="0.0" height="260px"/>
+        </filter>
+      </defs>
+
+      <g id="poliwonk" fill="mintcream" stroke="black" stroke-width="0" stroke-opacity="0.3">
+        <%= render "pw_paths" %>
+      </g>
+    </svg>
+  </div>
+
+  <div class="gradient">
+    <svg>
+      <radialGradient id="pw-black"> 
+        <stop offset="0%" stop-color="black" stop-opacity="0.6"/>
+        <stop offset="70%" stop-color="black" stop-opacity="0.2"/>
+        <stop offset="100%" stop-color="#104e8b" stop-opacity="0.0"/>
+      </radialGradient>
+
+      <rect width="100%" height="400px" fill="url(#pw-black)"/>
+    </svg>
   </div>
 </div>
+
+<!--div class="menu_bar">
+  <ul>
+    <li><#%= link_to image_tag("PW_forum.png", height: "40"), "/forum" %></li>
+    <li><#%= link_to image_tag("PW_mission.png", height: "40"), "/forum#!/mission" %></li>
+  </ul>
+</div-->

@@ -1,0 +1,31 @@
+.content {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 0px;
+  display: table;
+  width: 430px;
+
+  .statement > * {
+    /* @import url(http://fonts.googleapis.com/css?family=Droid+Sans); */
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-indent: 0px;
+    font-weight: 300;
+    color: gray;
+    letter-spacing: .5px;
+
+    @media screen and (max-device-width: 480px) {
+      color: white;
+      font-weight: 400
+    }
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+      color: white;
+      font-weight: 400
+    }
+  }
+}
+
