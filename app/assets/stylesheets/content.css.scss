@@ -1,22 +1,41 @@
 .content {
-  position: relative;
-  left: 0;
-  right: 0;
-  margin: auto;
-  margin-top: 0px;
-  display: table;
+  margin: 0 auto;
   width: 430px;
 
-  .statement > * {
-    /* @import url(http://fonts.googleapis.com/css?family=Droid+Sans); */
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    text-indent: 0px;
-    font-weight: 300;
-    color: gray;
-    letter-spacing: .5px;
+  @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+  @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+  font: 20px "Source Sans Pro", Helvetica, Arial, sans-serif;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-indent: 0px;
+  color: gray;
+  text-align: center;
 
+  input {
+    background-color: #e3e3e3;
+    background-color: WhiteSmoke;
+    height: 32px;
+    border: 2px solid #98a3a6;
+    border: 2px solid darkgray;
+    border-radius: 15px;
+    font: 20px "Source Sans Pro", Helvetica, Arial, sans-serif;
+    color: gray;
+  }
+
+  input[type="text"] {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #e3e3e3;
+    width: 200px;
+    height: 27px;
+    border: 2px solid #98a3a6;
+    border: 2px solid darkgray;
+    border-radius: 15px;
+  }
+
+  input#voter_district_address {
+    font: 20px "Source Sans Pro", Helvetica, Arial, sans-serif;
   }
 }
+
 

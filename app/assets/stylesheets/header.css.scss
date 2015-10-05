@@ -15,8 +15,6 @@
       background-position: 0px -70px;
       height: 260px;
       width: 100%;
-      //filter: url(/#blur);
-      //-webkit-filter: url(/#blur);
       filter: blur(1px);
       -webkit-filter: blur(1px);
     }
@@ -58,22 +56,22 @@
 
     div.statement {
         top: 0;
+        height: 260px;
         width: 100%;
         position: absolute;
 
       div#slogan {
         display: table;
         top: 0;
-        margin: 0 auto;
-        width: 1224px;
+        margin: 230px auto;
+        width: auto;
         white-space: nowrap;
-        margin-top: 230px;
         letter-spacing: 0.3em;
-        word-spacing: 110px;
-        font: 300 1.2em 'Andale Mono';
-        color: #c7ccd1;
-        text-shadow: 0px 0px 5px #c7ccd1;
-        opacity: 0.6;
+        word-spacing: 100px;
+        font: bold 1.2em 'Open Sans', 'Andale Mono';
+        color: #bad3d9;
+        text-shadow: 0px 0px 4px #c7ccd1;
+        opacity: 0.35;
       }
     }
   }

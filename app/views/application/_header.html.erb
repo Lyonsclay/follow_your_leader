@@ -4,27 +4,25 @@
   <div class="title-graphics">
     <svg>
       <defs>
-        <filter id="blur">
-          <feGaussianBlur stdDeviation="1"/>
-        </filter>
+        <filter id="dropShadow" x="-1%" y="-1%" width="120%" height="120%">
+            <feMergeNode in="SourceGraphic"/>
+          <feOffset in="SourceAlpha" dx="4" dy="4" result="offset"/>
+          <feGaussianBlur in="offset" stdDeviation="4" result="shadow"/>
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur"/>
 
-        <filter id="dropShadow">
-          <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
-          <feOffset dx="2" dy="4" />
-              <feMergeNode in="SourceGraphic" />
+          <feMerge>
+            <feMergeNode in="shadow"/>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
           </feMerge>
         </filter>
 
         <filter id="glow" x="-1" y="-1" width="100" height="100">
           <feGaussianBlur stdDeviation="0 1" result="glow"/>
-            <feMerge>
-              <feMergeNode in="glow"/>
-              <feMergeNode in="dropShadow"/>
-            </feMerge>
         </filter>
       </defs>
 
-      <g id="poliwonk" stroke="#c7ccd1" stroke-width="2" stroke-opacity="0.2" filter="url(#glow)">
+      <g id="poliwonk" stroke="#c7ccd1" stroke-width="2" stroke-opacity="0.2" filter="url(#dropShadow)">
         <%= render "pw_paths" %>
       </g>
     </svg>
@@ -44,7 +42,7 @@
 
   <div class="statement">
     <div id="slogan">
-      Massive Online Democracy for the People 
+      Massive Online Democracy for the People
     </div>
   </div>
 </div>
