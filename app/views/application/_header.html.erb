@@ -7,9 +7,24 @@
         <filter id="blur">
           <feGaussianBlur stdDeviation="1"/>
         </filter>
+
+        <filter id="dropShadow">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+          <feOffset dx="2" dy="4" />
+              <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+
+        <filter id="glow" x="-1" y="-1" width="100" height="100">
+          <feGaussianBlur stdDeviation="0 1" result="glow"/>
+            <feMerge>
+              <feMergeNode in="glow"/>
+              <feMergeNode in="dropShadow"/>
+            </feMerge>
+        </filter>
       </defs>
 
-      <g id="poliwonk" stroke="black" stroke-width="1" stroke-opacity="0.3">
+      <g id="poliwonk" stroke="#c7ccd1" stroke-width="2" stroke-opacity="0.2" filter="url(#glow)">
         <%= render "pw_paths" %>
       </g>
     </svg>
@@ -25,6 +40,12 @@
 
       <rect width="100%" height="260px" fill="url(#pw-black)"/>
     </svg>
+  </div>
+
+  <div class="statement">
+    <div id="slogan">
+      Massive Online Democracy for the People 
+    </div>
   </div>
 </div>
 

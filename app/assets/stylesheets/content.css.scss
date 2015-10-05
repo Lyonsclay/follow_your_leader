@@ -17,15 +17,6 @@
     color: gray;
     letter-spacing: .5px;
 
-    @media screen and (max-device-width: 480px) {
-      color: white;
-      font-weight: 400
-    }
-    
-    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-      color: white;
-      font-weight: 400
-    }
   }
 }
 
