@@ -1,10 +1,9 @@
 .content {
   margin: 0 auto;
-  width: 430px;
-
-  @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
-  @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-  font: 20px "Source Sans Pro", Helvetica, Arial, sans-serif;
+  width: 600px;
+  letter-spacing: 0.17em;
+  font: 300 20px Raleway, "Source Sans Pro", Helvetica, Arial, sans-serif;
+  -webkit-font-variant-ligatures: no-common-ligatures;
   margin-top: 50px;
   margin-bottom: 40px;
   text-indent: 0px;
@@ -38,4 +37,13 @@
   }
 }
 
+/* Footer specifc styles */
+.content {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
 
+.content:after {
+  content: "";
+  display: block;
+}

@@ -1,10 +1,13 @@
 <div class='leader'>
-  <div id="leader-photo"> 
+  <div class="leader-photo">
     <%= image_tag(leader.photoUrl) %>
+
+    <div class="leader-name">
+      <%= leader.name %>
+    </div>
   </div>
-  <div id="leader-id">
+  <div class="leader-id">
     <ul>
-      <li><%= leader.name %></li>
       <li><%= leader.office %></li>
     </ul>
   </div>
