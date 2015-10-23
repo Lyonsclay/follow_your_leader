@@ -7,6 +7,6 @@ describe "leaders/index.html.erb" do
   
   it "has a name" do
     render
-    expect(rendered).to match /Leaders/
+    expect(rendered).to match /Your Elected Officials/
   end
 end

@@ -10,7 +10,7 @@ class Leader
                 :photoUrl,
                 :urls,
                 :channels
-  
+
   def self.all
     ObjectSpace.each_object(Leader).to_a
   end

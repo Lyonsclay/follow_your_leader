@@ -2,13 +2,15 @@ require 'net/http'
 
 class RepsGetter
   attr_accessor :address, :hash, :leaders
+
   def initialize(address)
     @address = address
     @hash = self.api_call
     @leaders = self.create_leaders
     self.assign_offices
+    self.set_default_photo
   end
-  
+
   def get
     @leaders
   end
@@ -22,7 +24,7 @@ class RepsGetter
     end
     leaders
   end
-  
+
   def assign_offices
     offices = get_offices()
     
@@ -38,14 +40,21 @@ class RepsGetter
   def get_offices
     list = []
     offices = @hash["offices"]
-    
+
     offices.each do |office|
       office["officialIndices"].each do |index|
         list << office["name"]
       end
     end
-    
     list
+  end
+
+  def set_default_photo
+    @leaders.each do |leader|
+      if leader.photoUrl.nil?
+        leader.photoUrl = "profile_icon_long.svg"
+      end
+    end
   end
 
   def api_call

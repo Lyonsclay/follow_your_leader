@@ -33,7 +33,7 @@ describe LeadersController do
 
   describe "Post create" do
     before do
-      post :create, { voter_district: { address: "2020 Hillborne ln, Kansas City KS" } }
+      post :create, { voter_district: { address: "929 Jefferson St, Kansas City, MO 64105" } }
     end
 
     it "has a 200 status code" do
@@ -41,18 +41,11 @@ describe LeadersController do
     end
  
     it "has no leaders" do
-      expect(Leader.all).to match_array([])
+      expect(Leader.all.any?).to be true
     end
     
     it "renders :index template" do
       expect(response).to render_template(:index)
-    end
-
-    context "create a new Leader" do
-      it "has a leader" do
-        leader = Leader.new
-        expect(Leader.all).to match_array([leader])
-      end
     end
   end
 end
