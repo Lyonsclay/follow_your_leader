@@ -1,7 +1,12 @@
 <div class="content">
-  <h2>Your Elected Officials</h2>
+  <%= form_for VoterDistrict.new, url: leaders_path do |f| %>
+    <%= f.text_field :address, placeholder: "ENTER NEW ADDRESS" %>
+    <%= f.submit "REPS" %>
+  <% end %> 
 
-  <%= render @leaders %>
+  <p id="officials-district">Elected Officials for <%= @parsed_address %></p>
+
+  <ul class="leaders-list"><%= render @leaders %></ul>
 </div>
 
 

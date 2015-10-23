@@ -15,6 +15,10 @@ class RepsGetter
     @leaders
   end
 
+  def parsed_address
+    @hash["normalizedInput"].values.map(&:capitalize).join(' ')
+  end
+
   def create_leaders
     leaders = []
     reps = @hash["officials"]

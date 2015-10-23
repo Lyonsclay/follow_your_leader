@@ -1,3 +1,16 @@
+.leaders-list {
+  padding-left: 0px;
+
+  ul {
+    margin-left: 0px;
+  }
+
+  li {
+    margin-right: 30px;
+    display: inline-block;
+  }
+}
+
 .leader {
   //background-color: #f2f2f2;
   //background-color: #d6d6d6;
@@ -13,9 +26,9 @@
   ul {
     list-style: none;
     text-align: left;
-    padding-left: 7px;
-    margin-top: 10px;
-    margin-bottom: 7px;
+    padding-left: 9px;
+    margin-top: 8px;
+    margin-bottom: 0px;
   }
 
   li {
@@ -23,9 +36,16 @@
   }
 }
 
+#officials-district {
+  margin-top: 60px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
 .leader-photo {
   height: 250px;
   overflow: auto;
+  overflow-y: hidden;
 }
 
 .overlay {
