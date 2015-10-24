@@ -21,7 +21,12 @@ class RepsGetter
 
   def create_leaders
     leaders = []
-    reps = @hash["officials"]
+
+    if @hash["officials"]
+      reps = @hash["officials"]
+    else 
+      reps = []
+    end
 
     reps.each do |rep|
       leaders << Leader.new(white_list(rep))
@@ -31,7 +36,7 @@ class RepsGetter
 
   def assign_offices
     offices = get_offices()
-    
+
     @leaders.each_with_index do |leader, i|
       leader.office = offices[i]
     end
@@ -43,7 +48,13 @@ class RepsGetter
 
   def get_offices
     list = []
-    offices = @hash["offices"]
+
+    if @hash["offices"]
+      offices = @hash["offices"]
+    else 
+      offices = []
+    end
+
 
     offices.each do |office|
       office["officialIndices"].each do |index|
@@ -70,7 +81,9 @@ class RepsGetter
         key: key
       }
     )
+
     res = Net::HTTP.get_response(uri) 
+
     JSON.parse res.body
   end
 end

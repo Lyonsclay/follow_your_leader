@@ -1,0 +1,11 @@
+{
+ "kind": "civicinfo#representativeInfoResponse",
+ "normalizedInput": {
+  "line1": "345",
+  "city": "toyama-shi",
+  "state": "Toyama-ken",
+  "zip": "939-2715"
+ }
+}
+
+

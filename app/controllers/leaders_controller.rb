@@ -11,6 +11,10 @@ class LeadersController < ApplicationController
       RepsGetter.new(address)
     end
 
+    if query.get.empty?
+      render action: "new" and return
+    end
+
     @parsed_address = query.parsed_address
 
     @leaders = query.get
@@ -19,6 +23,5 @@ class LeadersController < ApplicationController
   end
 
   def index
-    byebug
   end
 end
